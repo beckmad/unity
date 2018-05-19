@@ -160,12 +160,12 @@ p {
     line-height: 44px;
 }
 
-.page-main-middle-box {
+.page-main__middle-box {
     display: flex;
     background: red;
 }
 
-.page-main-middle-left {
+.page-main__middle-left {
     padding-top: 213px;
     background: lavenderblush;
     display: flex;
@@ -176,7 +176,16 @@ p {
 
 }
 
-.page-main-middle-left::before {
+.page-main__middle-description {
+    position: absolute;
+    top: 440px;
+    left: 392px;
+    font-size: 58px;
+    font-weight: 500;
+    color: #303030;
+}
+
+.page-main__middle-left::before {
     content: '';
     display: block;
     position: absolute;
@@ -184,12 +193,16 @@ p {
     height: 680px;
     top: 0;
     left: 0;
-    background-color: rgb(27, 241, 173);
-    opacity:  .8;
+    background-color: rgba(27, 241, 173, .6);
 }
 
-.page-main-middle-right {
+
+.page-main__middle-right {
     background: yellow;
+}
+
+.page-main__middle-headline {
+
 }
 
 @media screen and (min-width: 992px) {
