@@ -162,18 +162,15 @@ p {
 
 .page-main__middle-box {
     display: flex;
-    background: red;
 }
 
 .page-main__middle-left {
     padding-top: 213px;
-    background: lavenderblush;
     display: flex;
     position: relative;
 }
 
-.page__main-middle-content-img {
-
+.page__main__middle-content-img {
 }
 
 .page-main__middle-description {
@@ -196,17 +193,103 @@ p {
     background-color: rgba(27, 241, 173, .6);
 }
 
-
 .page-main__middle-right {
-    background: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 145px;
+    padding-left: 13px;
+    position: relative;
 }
 
 .page-main__middle-headline {
-
+    font-weight: 500;
+    color: #303030;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 40px;
 }
 
-@media screen and (min-width: 992px) {
+.page-main__middle-headline::before {
+    content: '';
+    display: block;
+    width: 117px;
+    height: 117px;
+    border: 12px solid #eaeaea;
+    background: #ffffff;
+    position: absolute;
+    top: -25px;
+    left: 298px;
+    border-radius: 50%;
+    z-index: 0;
+}
 
+.page-main__middle-headline::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 263px;
+    background: #eaeaea;
+    top: -100px;
+    left: 385px;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.page-main__middle-purpose {
+    font-size: 86px;
+    line-height: 90px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #303030;
+    text-align: left;
+}
+
+.page-main__middle-purpose::before {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 6px solid #e98457;
+    background: #ffffff;
+    top: 50px;
+    left: 785px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.page-main__middle-purpose::after {
+    content: '+';
+    color: #e98457;
+    bottom: 75px;
+    left: 310px;
+    position: absolute;
+    font-size: 58px;
+    z-index: -1;
+}
+
+.page-main__middle-target {
+    color: #e98457;
+}
+
+.page-main__middle-decor-pluses {
+    position: absolute;
+    font-size: 24px;
+    letter-spacing: 7px;
+    top: 320px;
+    left: 58px;
+    color: #e0e0e0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1400px) {
+    .page-main__middle-purpose {
+        font-size: 46px;
+        line-height: 50px;
+
+    }
 }
 
 @media screen and (max-width: 768px) {
