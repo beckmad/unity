@@ -344,7 +344,6 @@ p {
 .page-main__team-list {
     margin: 0;
     padding: 0;
-    background: yellow;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -353,7 +352,6 @@ p {
 .page-main__team-item {
     max-width: 400px;
     display: flex;
-    background: red;
     padding: 15px 30px 15px 30px;
 }
 
@@ -369,23 +367,37 @@ p {
 
 .page-main__team-name {
     text-align: left;
+    font-size: 20px;
+    color: #303030;
+    line-height: 1.4;
 }
 
 .page-main__team-post {
     text-align: left;
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.4;
+    margin-bottom: 12px;
 }
 
-
-
 .page-main__team-social-box {
-    background: #000;
     display: flex;
     justify-content: space-between;
     width: 60%;
+    font-size: 0;
 }
+
 .page-main__team-social-link {
-    background: #fff;
-    display: block;
+    transition-property: opacity;
+    transition-duration: .3s;
+}
+
+.page-main__team-social-link:hover {
+    opacity: .7;
+}
+
+.page-main__team-social-link:active {
+    opacity: .3;
 }
 
 @media screen and (max-width: 1440px) {
