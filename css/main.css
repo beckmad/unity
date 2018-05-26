@@ -199,7 +199,7 @@ p {
     display: block;
     position: absolute;
     width: 82%;
-    height: 56vh;
+    height: 450px;
     bottom: 200px;
     left: 0;
     background-color: rgb(27, 241, 173);
@@ -210,7 +210,7 @@ p {
     display: block;
     position: absolute;
     width: 82%;
-    height: 56vh;
+    height: 450px;
     bottom: 200px;
     left: 0;
     background-color: rgb(27, 241, 173);
@@ -233,6 +233,7 @@ p {
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .page-main__middle-headline::before {
@@ -332,7 +333,7 @@ p {
 
 .page-main__team-description {
     color: #000;
-    font-size: 64px;
+    font-size: 72px;
     line-height: 70px;
     text-transform: uppercase;
     font-weight: 600;
@@ -398,6 +399,53 @@ p {
 
 .page-main__team-social-link:active {
     opacity: .3;
+}
+
+/*section.page-main__bottom*/
+.page-main__bottom {
+    height: 100vh;
+    padding-top: 50px;
+    position: relative;
+}
+
+.page-main__bottom-headline {
+    font-weight: 500;
+    color: #303030;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.page-main__bottom-description {
+    font-size: 72px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.page-main__bottom-description::before {
+    content: '';
+    color: #e98457;
+    top: 190px;
+    left: 17%;
+    position: absolute;
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    background: url("../img/rectangle.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.page-main__bottom-description::after {
+    content: '+';
+    color: #e98457;
+    top: 20px;
+    left: 70%;
+    position: absolute;
+    font-size: 58px;
+    z-index: -1;
 }
 
 @media screen and (max-width: 1440px) {
