@@ -25,6 +25,16 @@ p {
     padding: 0;
 }
 
+.visual-hidden {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /*header*/
 .page-header {
     background: url('../img/header-bg.jpg') no-repeat center center;
@@ -154,7 +164,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: lightcoral;
 }
 
 .page-main__top-headline {
@@ -337,7 +346,6 @@ p {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: lightblue;
 }
 
 .page-main__team-headline {
@@ -427,7 +435,6 @@ p {
     height: 100vh;
     padding-top: 50px;
     position: relative;
-    background: lavenderblush;
 }
 
 .page-main__bottom-headline {
@@ -553,13 +560,13 @@ p {
 .page-footer {
     padding: 60px 30px 110px 30px;
     width: 100%;
-    background: lightgrey;
     display: flex;
     justify-content: space-around;
 }
 
 .page-footer__left-box {
-    background: lightblue;
+    display: flex;
+    flex-direction: column;
 }
 
 .page-footer__left-box-top {
@@ -589,9 +596,75 @@ p {
 }
 
 .page-footer__right-box {
-    background: lavenderblush;
-    width: 500px;
-    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.page-footer__list {
+    margin: 0 0 30px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-size: 0;
+}
+
+.page-footer__item {
+    width: 22px;
+    height: 22px;
+    background: #000;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition-property: opacity, transform;
+    transition-duration: .3s;
+}
+
+.page-footer__item:hover {
+    opacity: .7;
+    transform: scale(1.1);
+}
+
+.page-footer__item:active {
+    opacity: .3;
+
+}
+
+.page-footer__hotline,
+.page-footer__email {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    position: relative;
+    padding-left: 28px;
+}
+
+.page-footer__hotline::before {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 0;
+    left: 0;
+    background: url("../img/phone.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.page-footer__email::before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 18px;
+    top: 0;
+    left: 0;
+    background: url("../img/mail.svg") no-repeat center center;
+    background-size: cover;
 }
 
 @media screen and (max-width: 1440px) {
