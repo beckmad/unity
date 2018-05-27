@@ -4,6 +4,7 @@ body {
     background: #ffffff;
     /*max-width: 1440px;*/
     height: 100%;
+    max-width: 1440px;
 }
 
 /*reset*/
@@ -171,8 +172,14 @@ p {
     flex-direction: column;
     justify-content: center;
     width: 43%;
+}
+
+.page-main__middle-left-container {
+    width: 100%;
+    height: 35vw;
     position: relative;
-    padding-top: 150px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .page__main__middle-content-img {
@@ -184,7 +191,7 @@ p {
 
 .page-main__middle-description {
     position: absolute;
-    top: 430px;
+    bottom: 50px;
     left: 47%;
     font-size: 42px;
     line-height: 47px;
@@ -194,24 +201,24 @@ p {
     z-index: 1;
 }
 
-.page-main__middle-left::before {
+.page-main__middle-left-container::before {
     content: '';
     display: block;
     position: absolute;
     width: 82%;
-    height: 450px;
-    bottom: 200px;
+    height: 85%;
+    top: 0;
     left: 0;
     background-color: rgb(27, 241, 173);
 }
 
-.page-main__middle-left::after {
+.page-main__middle-left-container::after {
     content: '';
     display: block;
     position: absolute;
     width: 82%;
-    height: 450px;
-    bottom: 200px;
+    height: 85%;
+    top: 0;
     left: 0;
     background-color: rgb(27, 241, 173);
     opacity: .3;
@@ -423,6 +430,7 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     color: #000;
+    margin-bottom: 100px;
 }
 
 .page-main__bottom-description::before {
@@ -434,7 +442,7 @@ p {
     z-index: -1;
     width: 40px;
     height: 40px;
-    background: url("../img/rectangle.svg") no-repeat center center;
+    background: url("../img/rectangle-bg.svg") no-repeat center center;
     background-size: cover;
 }
 
@@ -446,6 +454,82 @@ p {
     position: absolute;
     font-size: 58px;
     z-index: -1;
+}
+
+.page-main__bottom-list {
+    margin: 100px 0 0 0;
+    padding: 0 0 0 135px;
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.page-main__bottom-list::before,
+.page-main__bottom-list::after {
+    position: absolute;
+    display: block;
+    width: 96px;
+    height: 96px;
+    background: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 2px solid #000;
+    font-size: 70px;
+    line-height: 96px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.page-main__bottom-list::before {
+    content: '<';
+    left: 20px;
+}
+
+.page-main__bottom-list::after {
+    content: ">";
+    right: 20px;
+}
+
+.page-main__bottom-item {
+    max-width: 330px;
+    max-height: 300px;
+    margin-right: 25px;
+}
+
+.page-main__bottom-item:nth-of-type(1),
+.page-main__bottom-item:nth-of-type(4) {
+    position: relative;
+}
+
+.page-main__bottom-item:nth-of-type(1)::after {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1bf1ad;
+    position: absolute;
+    opacity: .8;
+}
+
+.page-main__bottom-item:nth-of-type(4) {
+    opacity: .5;
+}
+
+.page-main__bottom-item:nth-of-type(4)::after {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1bf1ad;
+    position: absolute;
+    opacity: .4;
+
 }
 
 @media screen and (max-width: 1440px) {
