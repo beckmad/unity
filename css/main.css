@@ -35,6 +35,24 @@ p {
     left: 0;
 }
 
+.headline-size-color-etc {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #303030;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 5px;
+}
+
+.page__main__big-text--size {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #303030;
+    font-size: 72px;
+    line-height: 1.2;
+    text-align: left;
+}
+
 /*header*/
 .page-header {
     background: url('../img/header-bg.jpg') no-repeat center center;
@@ -61,8 +79,20 @@ p {
     padding: 18px 27px;
 }
 
-.page-header__logo-box--border {
+.page-header__logo-box--black-border {
     border: 2px solid #000;
+}
+
+.page-header__logo-box--black-border:hover {
+    box-shadow: 5px 5px 0 0 #000;
+}
+
+.page-header__logo-box--white-border {
+    border: 2px solid #fff;
+}
+
+.page-header__logo-box--white-border:hover {
+    box-shadow: 5px 5px 0 0 #fff;
 }
 
 .page-header__logo-box:hover {
@@ -154,7 +184,7 @@ p {
 
 /*main*/
 
-.page__main {
+.page-main {
     text-align: center;
 }
 
@@ -167,11 +197,6 @@ p {
 }
 
 .page-main__top-headline {
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #303030;
     margin-bottom: 45px;
 }
 
@@ -257,12 +282,8 @@ p {
 }
 
 .page-main__middle-headline {
-    font-weight: 500;
-    color: #303030;
-    font-size: 18px;
-    line-height: 20px;
     margin-bottom: 10px;
-    text-transform: uppercase;
+
 }
 
 .page-main__middle-headline::before {
@@ -293,12 +314,7 @@ p {
 }
 
 .page-main__middle-purpose {
-    font-size: 72px;
-    line-height: 72px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #303030;
-    text-align: left;
+
 }
 
 .page-main__middle-purpose::before {
@@ -349,24 +365,13 @@ p {
 }
 
 .page-main__team-headline {
-    font-size: 18px;
-    line-height: 1.4;
-    text-transform: uppercase;
-    color: #303030;
     padding-left: 17%;
     text-align: left;
-    font-weight: 500;
     margin-top: 200px;
     margin-bottom: 10px;
 }
 
 .page-main__team-description {
-    color: #000;
-    font-size: 72px;
-    line-height: 70px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: left;
     padding-left: 17%;
     margin-bottom: 70px;
 }
@@ -438,20 +443,10 @@ p {
 }
 
 .page-main__bottom-headline {
-    font-weight: 500;
-    color: #303030;
-    font-size: 18px;
-    line-height: 20px;
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 .page-main__bottom-description {
-    font-size: 72px;
-    line-height: 1;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #000;
     margin-bottom: 100px;
 }
 
@@ -562,6 +557,7 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    border-top: 2px solid #efefef;
 }
 
 .page-footer__left-box {
