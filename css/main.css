@@ -218,7 +218,6 @@ p {
 .page-main__middle-box {
     display: flex;
     height: 100vh;
-    padding-right: 80px;
 }
 
 .page-main__middle-left {
@@ -289,7 +288,8 @@ p {
 .page-main__middle-right-container {
     position: relative;
     padding-top: 163px;
-    padding-left: 13px;
+    padding-top: 10vw;
+    padding-left: 10px;
     z-index: -10;
     height: 50vw;
     text-align: left;
@@ -302,9 +302,9 @@ p {
 .page-main__middle-headline::before {
     content: '';
     display: block;
-    width: 117px;
-    height: 117px;
-    border: 12px solid #eaeaea;
+    width: 8vw;
+    height: 8vw;
+    border: .8vw solid #eaeaea;
     background: #ffffff;
     position: absolute;
     border-radius: 50%;
@@ -320,9 +320,9 @@ p {
 .page-main__middle-purpose::before {
     content: '';
     display: block;
-    width: 48px;
-    height: 48px;
-    border: 6px solid #e98457;
+    width: 3vw;
+    height: 3vw;
+    border: .4vw solid #e98457;
     background: #ffffff;
     top: 20%;
     left: 77%;
@@ -350,7 +350,7 @@ p {
     position: absolute;
     font-size: 1.3vw;
     letter-spacing: .5vw;
-    top: 45%;
+    top: 40%;
     left: 6.7%;
     color: #e0e0e0;
     z-index: -1;
@@ -471,17 +471,18 @@ p {
 
 .page-main__bottom-description {
     margin-bottom: 100px;
+    position: relative;
 }
 
 .page-main__bottom-description::before {
     content: '';
     color: #e98457;
-    top: 190px;
-    left: 17%;
+    top: 10%;
+    left: -15%;
     position: absolute;
     z-index: -1;
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    height: 3vw;
     background: url("../img/rectangle-bg.svg") no-repeat center center;
     background-size: cover;
 }
@@ -489,10 +490,10 @@ p {
 .page-main__bottom-description::after {
     content: '+';
     color: #e98457;
-    top: 20px;
-    left: 70%;
+    top: -60%;
+    left: 85%;
     position: absolute;
-    font-size: 58px;
+    font-size: 4vw;
     z-index: -1;
 }
 
@@ -701,6 +702,14 @@ p {
 }
 
 @media screen and (max-width: 1180px) {
+    .headline-size-color-etc {
+        font-size: 1.7vw;
+    }
+
+    .page__main__big-text--size {
+
+        font-size: 4.5vw;
+    }
 
     .page-main__team-list {
         margin: 0 auto;
@@ -743,11 +752,7 @@ p {
         height: 225px;
 
     }
-
-    .page-main__team-social-link img {
-        width: 15px;
-        height: 15px;
-    }
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -790,8 +795,23 @@ p {
         width: 200px;
         height: 180px;
     }
+    .headline-size-color-etc {
+        font-size: 2vw;
+    }
+
+    .page__main__big-text--size {
+        font-size: 4.7vw;
+    }
+    .page-main__team-name {
+        font-size: 2vw;
+    }
+
+    .page-main__team-post {
+        font-size: 1.8vw;
+    }
 }
 
 @media screen and (max-width: 700px) {
+
 
 }
