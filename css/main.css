@@ -118,7 +118,7 @@ p {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 20px;
+    line-height: 1;
     letter-spacing: 5px;
 }
 
@@ -130,11 +130,12 @@ p {
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
-    font-size: 38px;
     font-weight: normal;
-    letter-spacing: 10px;
+    letter-spacing: 0.4vw;
+    font-size: 2.7vw;
+    line-height: 1.4;
     padding: 0;
-    line-height: 46px;
+
 }
 
 .page-header__list {
@@ -199,17 +200,18 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: aliceblue;
 }
 
 .page-main__top-headline {
-    margin-bottom: 45px;
+    margin-bottom: 4%;
 }
 
 .page-main__top-paragraph {
     color: #666666;
-    font-size: 28px;
+    font-size: 1.9vw;
+    line-height: 1.7;
     font-weight: 300;
-    line-height: 44px;
 }
 
 /*section.main.middle-first*/
@@ -363,6 +365,7 @@ p {
     flex-direction: column;
     padding-top: 200px;
     margin-bottom: 150px;
+    background: lightcyan;
 }
 
 .page-main__team-headline {
@@ -592,9 +595,9 @@ p {
 }
 
 .page-footer__question {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 1.3vw;
     line-height: 1.2;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 3px;
     align-self: center;
@@ -790,5 +793,5 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-    
+
 }
