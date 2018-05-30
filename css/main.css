@@ -19,7 +19,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -142,8 +143,6 @@ p {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 .page-header__link {
@@ -287,7 +286,6 @@ p {
 
 .page-main__middle-right-container {
     position: relative;
-    padding-top: 163px;
     padding-top: 10vw;
     padding-left: 10px;
     z-index: -10;
@@ -363,9 +361,17 @@ p {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
+    justify-content: space-around;
     margin-bottom: 150px;
+    padding: 20px 0;
     background: lightcyan;
+}
+
+.page-main__team-top-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .page-main__team-headline {
@@ -380,8 +386,6 @@ p {
 }
 
 .page-main__team-list {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -620,7 +624,8 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px;
+    border: 2px solid #000;
 }
 
 .page-footer__list {
@@ -687,6 +692,7 @@ p {
     background-size: cover;
 }
 
+/*meadia*/
 @media screen and (max-width: 1280px) {
     .headline-size-color-etc {
         font-size: 1.1vw;
@@ -734,6 +740,10 @@ p {
         margin-bottom: 15px;
     }
 
+    .page-main__team-item {
+        padding: 10px 20px;
+    }
+
     .page-main__team-avatar {
         width: 70px;
         height: 70px;
@@ -752,7 +762,7 @@ p {
         height: 225px;
 
     }
-    
+
 }
 
 @media screen and (max-width: 900px) {
@@ -795,6 +805,7 @@ p {
         width: 200px;
         height: 180px;
     }
+
     .headline-size-color-etc {
         font-size: 2vw;
     }
@@ -802,6 +813,7 @@ p {
     .page__main__big-text--size {
         font-size: 4.7vw;
     }
+
     .page-main__team-name {
         font-size: 2vw;
     }
@@ -809,9 +821,42 @@ p {
     .page-main__team-post {
         font-size: 1.8vw;
     }
+
+    .page-main__top-paragraph {
+        font-size: 3vw;
+    }
+
+    .page-footer__question {
+        font-size: 2.6vw;
+    }
+
+    .page-header__headline {
+        font-size: 3.7vw;
+
+    }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+    .page-header__headline {
+        font-size: 6vw;
 
+    }
+
+    .headline-size-color-etc {
+        font-size: 2.5vw;
+    }
+
+    .page-main__top-paragraph {
+        font-size: 3.7vw;
+    }
+
+    .page-main__bottom-content-img {
+        width: 160px;
+        height: 144px;
+    }
+
+    .page-footer__question {
+        font-size: 2.3vw;
+    }
 
 }
