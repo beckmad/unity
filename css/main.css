@@ -876,4 +876,28 @@ ul {
     .page-main__team-item-right {
         padding-left: 20px;
     }
+
+    .page-main__team-social-box {
+        width: 90%;
+    }
+
+    .page-main__middle-box {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .page-main__middle-left {
+        visibility: hidden;
+    }
+
+    .page-main__middle-right {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .page__main__big-text--size {
+        font-size: 8vw;
+    }
 }
