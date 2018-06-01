@@ -25,10 +25,6 @@ ul {
     padding: 0;
 }
 
-/*.wrapper {*/
-/*padding-bottom: 327px;*/
-/*}*/
-
 .visual-hidden {
     visibility: hidden;
     width: 1px;
@@ -85,17 +81,11 @@ ul {
 
 .page-header__logo-box--black-border {
     border: 2px solid #000;
-}
-
-.page-header__logo-box--black-border {
     box-shadow: 5px 5px 0 0 #000;
 }
 
 .page-header__logo-box--white-border {
     border: 2px solid #fff;
-}
-
-.page-header__logo-box--white-border {
     box-shadow: 5px 5px 0 0 #fff;
 }
 
@@ -311,10 +301,6 @@ ul {
     top: 0;
 }
 
-.page-main__middle-purpose {
-
-}
-
 .page-main__middle-purpose::before {
     content: '';
     display: block;
@@ -356,7 +342,6 @@ ul {
 }
 
 /*section.page-main__team*/
-
 .page-main__team {
     height: 100vh;
     display: flex;
@@ -611,6 +596,16 @@ ul {
 .page-footer__question--green {
     color: #1bf1ad;
     text-decoration: none;
+    transition-property: opacity;
+    transition-duration: .3s;
+}
+
+.page-footer__question--green:hover {
+    opacity: .6;
+}
+
+.page-footer__question--green:active {
+    opacity: .3;
 }
 
 .page-footer__left-box-bottom {
@@ -668,6 +663,17 @@ ul {
     text-align: left;
     position: relative;
     padding-left: 28px;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.page-footer__hotline:hover {
+    transform: scale(1.1);
+    color: #1bf1ad;
+}
+
+.page-footer__hotline:active {
+    opacity: .5;
 }
 
 .page-footer__hotline::before {
@@ -692,7 +698,7 @@ ul {
     background-size: cover;
 }
 
-/*meadia*/
+/*media*/
 @media screen and (max-width: 1280px) {
     .headline-size-color-etc {
         font-size: 1.1vw;
@@ -859,4 +865,15 @@ ul {
         font-size: 2.3vw;
     }
 
+    .page-main__team-name {
+        font-size: 3vw;
+    }
+
+    .page-main__team-post {
+        font-size: 2.2vw;
+    }
+
+    .page-main__team-item-right {
+        padding-left: 20px;
+    }
 }
