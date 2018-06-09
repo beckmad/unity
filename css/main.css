@@ -416,26 +416,6 @@ ul {
     position: relative;
 }
 
-.page-main__team-list::before,
-.page-main__team-list::after {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 5vw;
-    background: #1bf1ad;
-    color: #fff;
-}
-
-.page-main__team-list::before {
-    content: '<';
-    left: 0;
-}
-
-.page-main__team-list::after {
-    content: '>';
-    right: 0;
-}
-
 .page-main__team-item {
     max-width: 400px;
     display: flex;
